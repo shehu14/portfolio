@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+/* hiding scrollbars*/
+body *{
+  overflow: hidden;
+}
+/* styling svg background*/
+.svgbg {
+  position: relative;
+  background-color: #0f0f0f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='368' height='306.7' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.06'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+/* avatar styling to fit screen*/
+#avatar {
+  background-image: url("/images/IMG_4980.JPG");
+  width: 200px;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* centering texts*/
+.svgitems {
+  text-align: center;
+  width: 80%;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  z-index: 6;
+}
+/* styling the menu bar on desktp*/
+.topnav {
+  position: absolute;
+  top: 3px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: transparent;
+  z-index: 10000;
+
+  animation: fadein 4s ease;
+}
+/* desktop menu links*/
+.topnav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 15px 30px;
+}
+.topnav a:hover {
+  color: rgb(243, 86, 38);
+}
+/* logo styles*/
+.topnav img {
+  margin-top: -15px;
+  margin-right: 40px;
+}
+/* clean up*/
+.topnav {
+  margin-bottom: 0;
+}
+/*paragraph font styling*/
+.svgitems p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+/* adding wave svg with pseudo selector*/
+.svgbg::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url("/static/303678-ffffff.svg");
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+}
+h1 {
+  font-size: 2.8em;
+}
+h3 {
+  font-size: 2.5em;
+  overflow: hidden;
+}
+/*animating span with pseudo selector*/
+.span:before {
+  content: "";
+  color: rgb(243, 86, 38);
+  animation: changetext infinite 8s;
+  font-size: 1em;
+}
+/* portfolio styling start*/
+.viewwork {
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  border:3px solid whitesmoke;
+
+  /*z-index: 200px;*/
+}
+.work1,
+.work3 {
+  max-width: 300px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1.5s all ease-in;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 30px;
+}
+.work2 {
+  max-width: 300px;
+  opacity: 0;
+  transform: translatex(-20px);
+  transition: 1.5s all ease-in;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 30px;
+}
+.workcontainer {
+  overflow: hidden;
+}
+.workcontainer i {
+  margin-right: 10px;
+}
+.workcontainer a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #252a3291;
+}
+.fadeup {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.slideleft {
+  opacity: 1;
+  transform: translateX(0px);
+}
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  max-width: 800px;
+  align-content: center;
+  filter: grayscale(100%);
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+}
+.items:hover{
+  transform: translateY(-10px);
+}
+/* portfolio styling end*/
+/* footer styling start*/
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #252a32;
+}
+.footer a {
+  margin: 10px;
+  color: rgb(243, 86, 38);
+}
+/* footer styling end*/
+/* drawer styling start*/
+.drawer{
+  display: flex;
+  flex-direction: column;
+background-color: #252a32;
+color: white;
+align-content: center;
+text-align: center;
+height: 100vh;
+
+}
+
+.drawer i{
+margin-right: 10px;
+
+}
+.ref{
+  text-align: center;
+  padding-left: 5px;
+}
+.drawer *{
+  margin-top: 5px ;
+  overflow: hidden;
+}
+.drawer img{
+  margin-top: 25px;
+  border-radius: 50%;
+}
+.drawer ,.personal{
+  margin: 0 auto;
+}
+.badge{
+  background-color:#000000 ;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+}
+/* drawer styling end*/
+/* main cv styling start*/
+.sectionprofile{
+  text-align: left;
+  line-height: 20px;
+}
+.sectionprofile h1{
+  font-family: 'Courier New', Courier, monospace;
+}
+.sectionprofile p{
+  max-width: 600px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.col,.s6{
+  text-align: center;
+}
+.webdevbarcontainer,.uibarcontainer{
+  width: 100%;
+  background-color:rgb(109, 109, 109);
+}
+.webdevbar,.uidevbar{
+  background-color: rgb(243, 86, 38);
+  width: 0%;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+
+}
+.skills *{
+  margin-top: 5px;
+}/* main cvstyling end*/
+/*side bar styling*/
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #252a32;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  transition: 500ms transform;
+  opacity: 0.99;
+  z-index: 2000;
+}
+/*to be added in js*/
+.slidein {
+  animation: slide 0.7s ease-in;
+}
+.badges{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logotitle {
+  font-size: 2em;
+  margin: auto 0;
+  line-height: 2em;
+}
+#hamburger {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 3px;
+  color: white;
+}
+/*centering links*/
+.flexlinks {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.cv{
+  background-color: black;
+}
+.pushdown{
+  margin-top: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container img {
+  margin: 0 auto;
+}
+.flexlinks a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.arrow {
+  margin-top: 10px;
+  animation: updown 1s ease-in-out infinite;
+}
+/*centeringtext in particlecanvas*/
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  height: 100vh;
+}
+/*styling cntact frm*/
+.input,.message{
+  background-color: transparent;
+  color: white;
+  border:1px solid rgba(109, 109, 109, 0.226);
+  border-radius: 0%;
+  height: 50px;
+  width:500px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  margin: 0 auto;
+}
+.contactinput{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message{
+  margin-top: 10px;
+  height: 150px;
+}
+button{
+  max-width: 80px;
+  margin: 0 auto;
+  background: none;
+  color: white;
+  border: 1px solid rgb(243, 86, 38); 
+  padding: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+.contact{
+  
+  margin-top: 30px;
+  color: rgb(243, 86, 38);
+
+}
+/* MAKING THE FOOTER BACKGROUND TRANSPARENT */
+.transparent{
+ background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100vw;
+}
+/*FOR MY SITE THIS IS WHERE THE APPLICATION STARTS TO BREAK AT 800PX SCREENS AND LOWER*/
+/*resizing to fit smaller screens*/
+@media screen and (max-width: 800px) {
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+  .pushdown{
+    margin-top: 0px;
+  }
+  body  *{
+    overflow: hidden;
+  }
+  .svgbg::before {
+    height: 80px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  #hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .span:before {
+    content: "";
+    color: rgb(243, 86, 38);
+    animation: changetext infinite 8s ease-out;
+    font-size: 1em;
+  }
+  #particles-js {
+    width: 100vw;
+    height: 50vh;
+  }
+  .topnav {
+    display: none;
+  }
+  #hamburger {
+    display: inline-block;
+    z-index: 10000;
+    width: 80px;
+    margin: 10px;
+  }
+  #sidebar {
+    display: block;
+    width: 100vw;
+    transform: translateX(-1000px);
+    transition: 500ms transform;
+  }
+  .cp-text {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+  #sidebar.open {
+    transform: translateX(0);
+  }
+  .items{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .items>img{
+    margin:0 auto
+  }
+.input,.message{
+  width:250px;
+}
+}
+/* CHANGING THE CONTENT OF A SPAN TAG HELPWITH ANIMATI0N*/
+@keyframes changetext {
+  0% {
+    content: "WEB-DEVELOPER";
+  }
+  35% {
+    content: "UI&GRAPHIC DESIGNER";
+  }
+  70% {
+    content: "GAME-DEVELOPER";
+  }
+  100% {
+    content: "ENTEPRENEUR";
+  }
+}
+/*SLIDING IN THE PAGE BODY*/
+
+@keyframes slide {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+/*ARROW ANIMATION BY CHANGING OPACITY AND Y POSITION*/
+@keyframes updown {
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+} 
+/* FADING IN THE TOP NAV TO GIVE A SMOOTH PRESENTATION */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
