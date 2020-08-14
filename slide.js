@@ -14,5 +14,5 @@ var avatar = document.getElementById("avatar");
     });
     //resetting it back
     avatar.addEventListener("mouseout", function() {
-      avatar.style.backgroundImage = "url('images/IMG_4980.jpg')";
+      avatar.style.backgroundImage = "url('images/IMG_4980.JPG')";
     });
