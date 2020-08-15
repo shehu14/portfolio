@@ -12,13 +12,13 @@ function show(){
 var screen=window.innerHeight*1.2;
 if(work1pos<screen){
     //add animatin classto element
-    work1.classList.add('fadeup')
+    work1.classList.add('fadeup');
 }
 if(work2pos<screen){
-    work2.classList.add('slideleft')
+    work2.classList.add('slideleft');
 }
 if(work3pos<screen){
-    work3.classList.add('fadeup')
+    work3.classList.add('fadeup');
 }
 }
 // add windowlistener
