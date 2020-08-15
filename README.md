@@ -9,7 +9,7 @@ cv page:
 <img src="validation/cv.png" width="400">
 
 index page:
-<img src="validation/index" width="400">
+<img src="validation/index.png" width="400">
           
  loadbars(JS):
 <img src="validation/loadbars.png" width="400">
